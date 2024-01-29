@@ -30,4 +30,4 @@ Below are the instructions to build from source. Alternatively you can find a pr
 ## Notes
 - If controller model position not fit, please follow these steps to fix it.
     1. Please open CxrUnityXRManager.cs from `Project > Packages > NVIDIA CloudXR Client for Unity > Runtime`
-    2. Replace **/input/grip/pose** to  **/input/aim/pose**"# VIVE-CloudXR-UnitySample" 
+    2. Replace **/input/grip/pose** to  **/input/aim/pose**
