@@ -5,7 +5,7 @@ Demonstrate how to program with NVIDIA CloudXR Client Unity Plugin for VIVE Focu
 Below are the instructions to build from source. Alternatively you can find a pre-built APK in the [Releases]() section.
 
 ## Requirements
-- HTC VIVE Focus 3
+- HTC VIVE Focus 3 or VIVE XR Elite 
 - Unity Minimum Version [2022.3.9f1 LTS](https://unity.com/releases/editor/archive) or later
     - Unity 2021.3.31f1 LTS has been tested and is functioning correctly.
 - [VIVE OpenXR Plugin - Android 1.0.5](https://github.com/ViveSoftware/VIVE-OpenXR-AIO)
