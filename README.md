@@ -10,6 +10,7 @@ Below are the instructions to build from source. Alternatively you can find a pr
     - Unity 2021.3.31f1 LTS has been tested and is functioning correctly.
 - [VIVE OpenXR Plugin - Android 1.0.5](https://github.com/ViveSoftware/VIVE-OpenXR-AIO)
 - [NVIDIA CloudXR Client Unity Plugin](https://developer.nvidia.com/nvidia-cloudxr-sdk)
+- [XR Interaction Toolkit 2.5.4](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@2.5/manual/index.html)
 
 ## Settings & Build Setup
 1. Switch to Android platform.
@@ -23,11 +24,15 @@ Below are the instructions to build from source. Alternatively you can find a pr
 1. Open Server and check server ip.
 2. Modify the IP address in CloudXRLaunchOptions.txt.
 3. Push CloudXRLaunchOptions.txt to /storage/emulated/0/Android/data/**PackageName**/files/CloudXRLaunchOptions.txt
+4. Push cxrUnityConfig.json to /storage/emulated/0/Android/data/**PackageName**/files/cxrUnityConfig.json
     - PackageName from `Edit > Project Settings > Player > Other Settings > Package Name`
     - pre-built APK PackageName : `com.htc.vive.cloudxr.unitysample`
-4. Launch the apk to start streaming.
+5. Launch the apk to start streaming.
 
 ## Notes
 - If controller model position not fit, please follow these steps to fix it.
     1. Please open CxrUnityXRManager.cs from `Project > Packages > NVIDIA CloudXR Client for Unity > Runtime`
     2. Replace **/input/grip/pose** to  **/input/aim/pose**
+- If you want to change the resolution, please follow these steps to fix it.
+    1. Check the device's default resolution via XRSettings.eyeTextureHeight and XRSettings.eyeTextureWidth.
+    2. Calculate the scale value between your desired resolution and the current device resolution, and set it in Assets/Settings/URP-Performant.asset under Quality > Render Scale

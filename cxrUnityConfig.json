@@ -1,0 +1,48 @@
+{
+    "cxrLibraryConfig": {
+        "cxrConnectionConfig": {
+            "clientNetwork": 2,
+            "topology": 1
+        },
+        "cxrDebugConfig": {
+            "logVerbose": false,
+            "logQuiet": false,
+            "logPrivacyDisabled": false,
+            "traceLocalEvents": false,
+            "traceStreamEvents": false,
+            "traceQosStats": false,
+            "dumpImages": false,
+            "dumpAudio": false,
+            "embedServerInfo": false,
+            "embedClientInfo": false,
+            "captureServerBitstream": false,
+            "captureClientBitstream": false,
+            "fallbackDecoder": false,
+            "enableSXRDecoder": false,
+            "enableAImageReaderDecoder": false,
+            "outputLinearRGBColor": false,
+            "disableMultistreamQos": false
+        },
+        "cxrRecieverConfig": {
+            "logMaxSizeKB": -1,
+            "logMaxAgeDays": -1
+        },
+        "cxrDeviceConfig": {
+            "maxResFactor": 3.0,
+            "receiveAudio": true,
+            "sendAudio": false,
+            "embedInfoInVideo": false,
+            "disablePosePrediction": false,
+            "angularVelocityInDeviceSpace": true,
+            "disableVVSync": false,
+            "foveatedScaleFactor": 50,
+            "posePollFreq": 0,
+            "maxVideoBitrateKbps": 0,
+            "maxClientQueueSize": 0.0
+        },
+        "logRootDirectory": "",
+        "dllRootDirectory": ""
+    },
+    "debugLevel": 2,
+    "doLDAT": true
+}
