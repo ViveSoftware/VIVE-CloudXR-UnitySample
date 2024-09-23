@@ -28,7 +28,7 @@
             "logMaxAgeDays": -1
         },
         "cxrDeviceConfig": {
-            "maxResFactor": 3.0,
+            "maxResFactor": 1.0,
             "receiveAudio": true,
             "sendAudio": false,
             "embedInfoInVideo": false,
